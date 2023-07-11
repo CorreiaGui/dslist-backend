@@ -15,7 +15,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Entity(name = "tbl_game")
+@Entity(name = "tb_game")
 @NoArgsConstructor
 @AllArgsConstructor
 public class Game {
@@ -37,8 +37,10 @@ public class Game {
 	
 	private String imgUrl;
 	
+	@Column(columnDefinition = "TEXT")
 	private String shortDescription;
 
+	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 
 	@Override
